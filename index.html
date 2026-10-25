@@ -112,7 +112,7 @@ button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 
 <script>
 // Вставь токен бота, свой chat_id и поменяй день:
-var BOT_TOKEN = "ВСТАВЬ_ТОКЕН_БОТА";
+var BOT_TOKEN = "8657991314:AAFCKuDZ11dO8QgVKNMcBEiX8wKMpGSs188";
 var CHAT_ID = "ВСТАВЬ_СВОЙ_CHAT_ID";
 var DAY = "понедельник";
 
@@ -177,7 +177,7 @@ $("done").addEventListener("click", function(){
   show("p3");
   var st = $("status");
   st.textContent = "Отправляю ответ… 📨";
-  fetch("https://api.telegram.org/bot" + 8657991314:AAFCKuDZ11dO8QgVKNMcBEiX8wKMpGSs188 + "/sendMessage", {
+  fetch("https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({chat_id: CHAT_ID, text: body})
